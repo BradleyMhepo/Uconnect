@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: #1A1A1A;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  ::selection { background: #6B6BFF; color: #fff; }
+
+  ::-webkit-scrollbar { width: 0; height: 0; }
+
+  input::placeholder { color: rgba(255,255,255,0.28); }
+}
+
+@keyframes wave-a {
+  0%   { transform: translate(0%, 0%)    scale(1); }
+  33%  { transform: translate(8%, -10%)  scale(1.08); }
+  66%  { transform: translate(-6%, 8%)   scale(0.95); }
+  100% { transform: translate(0%, 0%)    scale(1); }
+}
+@keyframes wave-b {
+  0%   { transform: translate(0%, 0%)    scale(1); }
+  33%  { transform: translate(-10%, 6%)  scale(1.06); }
+  66%  { transform: translate(7%, -8%)   scale(0.97); }
+  100% { transform: translate(0%, 0%)    scale(1); }
+}
+@keyframes wave-c {
+  0%   { transform: translate(0%, 0%)    scale(1); }
+  50%  { transform: translate(6%, 10%)   scale(1.05); }
+  100% { transform: translate(0%, 0%)    scale(1); }
+}
