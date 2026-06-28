@@ -1,7 +1,24 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Link, useParams, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { packs, CATEGORIES, CAT_GRADIENT, type Pack } from './data/packs'
+import { CATEGORIES, CAT_GRADIENT, type Pack } from './data/packs'
+import { fetchPacks, type DbPack } from './lib/supabase'
+
+function dbPackToPack(p: DbPack): Pack {
+  return {
+    id:         p.id,
+    slug:       p.slug,
+    name:       p.name,
+    category:   p.category,
+    region:     p.region,
+    records:    p.lead_count,
+    price:      p.price,
+    available:  p.available,
+    tagline:    p.tagline,
+    fields:     ['Business Name', 'City', 'Phone', 'Address', 'Problem Found', 'Pitch Angle'],
+    sampleRows: [],
+  }
+}
 
 // ─── Responsive hook ────────────────────────────────────────────────────────
 function useWindowWidth() {
@@ -473,9 +490,18 @@ function Home() {
   const [maxPrice, setMaxPrice]             = useState('')
   const [spotlitId, setSpotlitId]           = useState<string | null>(null)
   const [drawerOpen, setDrawerOpen]         = useState(false)
+  const [packs, setPacks]                   = useState<Pack[]>([])
+  const [loading, setLoading]               = useState(true)
   const w       = useWindowWidth()
   const mobile  = w < BP_MOBILE
   const tablet  = w < BP_TABLET
+
+  useEffect(() => {
+    fetchPacks()
+      .then(data => setPacks(data.map(dbPackToPack)))
+      .catch(() => {/* keep empty — static fallback would go here */})
+      .finally(() => setLoading(false))
+  }, [])
 
   const filtered = packs
     .filter(p => {
@@ -682,19 +708,32 @@ function Home() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.15 }}
             >
-              {filtered.length === 0 && (
+              {loading && (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 220px)', gap: 20, paddingTop: 8 }}>
+                  {Array.from({ length: 15 }).map((_, i) => (
+                    <motion.div key={i}
+                      initial={{ opacity: 0.3 }}
+                      animate={{ opacity: [0.3, 0.6, 0.3] }}
+                      transition={{ duration: 1.4, repeat: Infinity, delay: i * 0.07 }}
+                      style={{ height: 150, borderRadius: 10, background: SURFACE, border: `1px solid ${BORDER}` }}
+                    />
+                  ))}
+                </div>
+              )}
+
+              {!loading && filtered.length === 0 && (
                 <div style={{ textAlign: 'center', padding: '60px 0', color: TEXT_3, fontSize: 14 }}>
                   No packs match your filters.
                 </div>
               )}
 
               {/* When a specific category is selected — flat grid */}
-              {activeCategory !== 'All' && available.length > 0 && (
+              {!loading && activeCategory !== 'All' && available.length > 0 && (
                 <PackGrid packs={available} spotlitId={spotlitId} setSpotlitId={setSpotlitId} />
               )}
 
               {/* When All — themed sections */}
-              {activeCategory === 'All' && THEMED_SECTIONS.map(section => {
+              {!loading && activeCategory === 'All' && THEMED_SECTIONS.map(section => {
                 const group = available.filter(p => section.categories.includes(p.category))
                 const capped = section.label === 'Trending' ? group.slice(0, 10) : group
                 if (capped.length === 0) return null

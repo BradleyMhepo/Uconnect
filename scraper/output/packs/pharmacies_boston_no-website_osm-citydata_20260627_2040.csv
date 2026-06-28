@@ -1,0 +1,8 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Osco Pharmacy,Boston,,,,,,,,N/A,No website,,osm
+Rosen's Belmont Medical Supply,Belmont,MA,185 Belmont Street,20478,,,,,N/A,No website,,osm
+Rite Aid,Boston,,100 Cambridge Street,02114,,,,,N/A,No website,,osm
+Skendarian Apothecary,Cambridge,MA,1613 Cambridge Street,02138,,,,,N/A,No website,,osm
+Fenway Health Pharmacy,Boston,MA,1340 Boylston Street,02115,,,,,N/A,No website,,osm
+Koala Health,Boston,MA,179 South Street,02111,,,,,N/A,No website,,osm
+Saigon Pharmacy,Boston,MA,1167 Dorchester Avenue,02125,,,,,N/A,No website,,osm

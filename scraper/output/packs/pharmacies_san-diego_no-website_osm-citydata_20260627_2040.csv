@@ -1,0 +1,5 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Community Pharmacy,San Diego,,640 University Avenue,92103,,,,,N/A,No website,,osm
+Hillcrest Pharmacy,San Diego,,,,,,,,N/A,No website,,osm
+Pharmabox,San Diego,,,,,,,,N/A,No website,,osm
+Pride Pharmacy,San Diego,,,,,,,,N/A,No website,,osm

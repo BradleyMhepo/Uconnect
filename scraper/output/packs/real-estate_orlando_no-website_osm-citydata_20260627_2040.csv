@@ -1,0 +1,5 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Coldwell Banker,Orlando,,,,,,,,N/A,No website,,osm
+Lakeside Realty Windermere Inc.,Windermere,FL,430 Main Street,34786,,,,,N/A,No website,,osm
+Orlando Sunshine Realty,Orlando,FL,,,+1-407-666-7448,,,,N/A,No website,,osm
+RE/MAX,Orlando,,,,,,,,N/A,No website,,osm

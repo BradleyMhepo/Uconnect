@@ -1,0 +1,5 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Publix,Orlando,,,,,,,,N/A,No website,,osm
+MetroMeds Pharmacy,Orlando,FL,409 East Michigan Street,32806,+1-321-888-2222,,,,N/A,No website,,osm
+Angel's Pharmacy,Orlando,FL,259 East Michigan Street,32806,+1-407-426-7000,,,,N/A,No website,,osm
+Health Mart Pharmacy,Orlando,,,,,,,,N/A,No website,,osm

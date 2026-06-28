@@ -1,0 +1,11 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Veterinary Vision,San Francisco,CA,1235 Taraval Street,94116,,,,,N/A,No website,,osm
+San Francisco SPCA Veterinary Hospital - Mission Campus,San Francisco,CA,201 Alabama Street,94103,+1 415-554-3030,,,,N/A,No website,,osm
+Sunset Veterinary Hospital,San Francisco,CA,3741 Noriega Street,,,,,,N/A,No website,,osm
+San Francisco Pet Hospital,San Francisco,,1371 Fulton Street,94117,,,,,N/A,No website,,osm
+Polk Street Animal Hospital,San Francisco,CA,Polk Street,,,,,,N/A,No website,,osm
+Modern Animal,San Francisco,,401 Divisadero Street,,,,,,N/A,No website,,osm
+The Castro Animal Hospital,San Francisco,,,,,,,,N/A,No website,,osm
+South Park Animal Hospital,San Francisco,,,,+1 415-523-4404,,,,N/A,No website,,osm
+San Francisco Animal Medical Center,San Francisco,,2343 Fillmore Street,,+1 415-872-1872,,,,N/A,No website,,osm
+Mission Pet Hospital,San Francisco,,720 Valencia Street,,+1 415-552-1969,,,,N/A,No website,,osm

@@ -1,0 +1,6 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Rite Aid,Atlanta,,,,,,,,N/A,No website,,osm
+Publix,Atlanta,,,,,,,,N/A,No website,,osm
+Express Drugs,Atlanta,,,,,,,,N/A,No website,,osm
+Little 5 Points Pharmacy,Atlanta,GA,484 Moreland Avenue Northeast,30307,,,,,N/A,No website,,osm
+West End Pharmacy,Atlanta,,,,,,,,N/A,No website,,osm

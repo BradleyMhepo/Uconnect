@@ -1,0 +1,9 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Denver Drug and Liquor,Denver,CO,400 East Colfax Avenue,80203,,,,,N/A,No website,,osm
+Avella Specialty Pharmacy,Denver,CO,1245 East Colfax Avenue,80218,,,,,N/A,No website,,osm
+Good Neighbor Pharmacy,Denver,CO,501 West 44th Avenue,80216,,,,,N/A,No website,,osm
+King Soopers Pharmacy,Denver,,3475 South University Boulevard,80113,,,,,N/A,No website,,osm
+Capitol Heights Pharmacy & Liquor,Denver,CO,1200 Madison Street,80206,,,,,N/A,No website,,osm
+Artemesia and Rue,Denver,,,,,,,,N/A,No website,,osm
+Saint Joseph Clinic Pharmacy,Denver,CO,1825 Marion Street,80218,,,,,N/A,No website,,osm
+Compound Pharmacy & Medical Supply,Aurora,CO,1555 South Havana Street,80012,+1-303-750-3600,,,,N/A,No website,,osm

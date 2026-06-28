@@ -1,0 +1,3 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Intelectric,Los Angeles,,,,,,,,N/A,No website,,osm
+A & M Electric,Los Angeles,CA,7218 Beverly Boulevard,90036,+1 323-935-1144,,,,N/A,No website,,osm

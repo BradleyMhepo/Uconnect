@@ -1,0 +1,6 @@
+name,city,state,address,zip,phone,website,rating,reviews,mobile_score,problem_found,pitch_angle,source
+Beach Park Animal Clinic,Tampa,,4347 West Kennedy Boulevard,,,,,,N/A,No website,,osm
+Cat Hospital,Saint Petersburg,,Gandy Boulevard,,,,,,N/A,No website,,osm
+Banfield Pet Hospital,Tampa,FL,13112 Dale Mabry Highway,33618,,,,,N/A,No website,,osm
+Animal Clinic,Tampa,,,,,,,,N/A,No website,,osm
+Coastal Animal Clinic,Tampa,,,,,,,,N/A,No website,,osm
